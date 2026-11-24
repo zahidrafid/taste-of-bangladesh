@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Taste of Bangladesh and share your favorite Bangladeshi dish.">
+    <title>Contact | Taste of Bangladesh</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">Taste of Bangladesh</a>
+            <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">&#9776; Menu</button>
+            <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dishes.html">Famous Dishes</a></li>
+                    <li><a href="spices.html">Spices</a></li>
+                    <li><a href="recipe.html">Recipe</a></li>
+                    <li><a href="culture.html">Food &amp; Festivals</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+
+        <section class="page-banner">
+            <h1>Contact &amp; Feedback</h1>
+            <p>Tried a dish from this site? Have a favorite Bangladeshi food? Let me know.</p>
+        </section>
+
+        <section class="content-section">
+            <!-- Example form: it does not send anywhere, JavaScript shows a thank-you message -->
+            <form id="feedbackForm" class="feedback-form" action="#" method="post">
+
+                <!-- Text input -->
+                <div class="form-row">
+                    <label for="fullName">Full name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="e.g. Rahim Uddin" required>
+                </div>
+
+                <!-- Email input -->
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+
+                <!-- Select dropdown -->
+                <div class="form-row">
+                    <label for="favDish">Favorite dish</label>
+                    <select id="favDish" name="favDish" required>
+                        <option value="">-- Choose one --</option>
+                        <option value="kacchi">Kacchi Biryani</option>
+                        <option value="fuchka">Fuchka</option>
+                        <option value="ilish">Ilish Bhaja</option>
+                        <option value="khichuri">Khichuri</option>
+                        <option value="pitha">Pitha</option>
+                        <option value="other">Something else</option>
+                    </select>
+                </div>
+
+                <!-- Radio buttons -->
+                <fieldset class="form-row">
+                    <legend>Have you tried Bangladeshi food before?</legend>
+                    <div class="choice">
+                        <input type="radio" id="triedYes" name="tried" value="yes" required>
+                        <label for="triedYes">Yes, many times</label>
+                    </div>
+                    <div class="choice">
+                        <input type="radio" id="triedOnce" name="tried" value="once">
+                        <label for="triedOnce">Once or twice</label>
+                    </div>
+                    <div class="choice">
+                        <input type="radio" id="triedNo" name="tried" value="no">
+                        <label for="triedNo">Not yet</label>
+                    </div>
+                </fieldset>
+
+                <!-- Checkboxes -->
+                <fieldset class="form-row">
+                    <legend>What would you like to see more of? (pick any)</legend>
+                    <div class="choice">
+                        <input type="checkbox" id="moreRecipes" name="more" value="recipes">
+                        <label for="moreRecipes">More recipes</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="moreSweets" name="more" value="sweets">
+                        <label for="moreSweets">Sweets and desserts</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="moreRestaurants" name="more" value="restaurants">
+                        <label for="moreRestaurants">Bangladeshi restaurants in Texas</label>
+                    </div>
+                </fieldset>
+
+                <!-- Number input -->
+                <div class="form-row">
+                    <label for="spice">How spicy do you like your food? (1 = mild, 5 = very hot)</label>
+                    <input type="number" id="spice" name="spice" min="1" max="5" value="3">
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me about your favorite dish or a question you have..." required></textarea>
+                </div>
+
+                <!-- Buttons -->
+                <div class="form-buttons">
+                    <button type="submit" class="button">Send Feedback</button>
+                    <button type="reset" class="button button-outline">Clear Form</button>
+                </div>
+
+                <!-- JavaScript puts the thank-you message here -->
+                <p id="formMessage" class="form-message" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <!-- Extra helpful links -->
+        <aside class="sources">
+            <h2>Learn More</h2>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Bangladeshi_cuisine">Bangladeshi cuisine - Wikipedia</a></li>
+                <li><a href="https://en.banglapedia.org/">Banglapedia - National Encyclopedia of Bangladesh</a></li>
+                <li><a href="https://www.thedailystar.net/weekend-read/news/pitha-the-heart-winter-celebrations-3785946">Pitha: the heart of winter celebrations - The Daily Star</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Taste of Bangladesh</p>
+        <p>Webmaster: Abrar Zahid Rafid | Site finished: November 24, 2026</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
